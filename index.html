@@ -1,121 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A group of Hard Working/Fun-loving Developers. We gather at Microsoft Build, the largest Microsoft developer conference. Our mission is to build a dynamic networking community through various activities and gatherings. The Krewe Build is open to current and past attendees of Microsoft Build previously known as PDC.">
-    <meta name="author" content="TheKrewBuild">
-    <title>The Krewe of Build</title>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="https://az716616.vo.msecnd.net/thekrewebuild/content/Design.css" />
+		<script src="https://az716616.vo.msecnd.net/thekrewebuild/content/Core.js" type="text/javascript"></script>
+	</head>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+	<body>
+		<header>
+			<div id="imageOverlayLeft" src="https://az716616.vo.msecnd.net/thekrewebuild/content/Overlay.png"></div>
+			<div id="imageOverlayRight" src="https://az716616.vo.msecnd.net/thekrewebuild/content/Overlay.png"></div>
 
-    <!-- Custom CSS -->
-    <link href="https://az716616.vo.msecnd.net/thekrewebuild/css/landing-page.css" rel="stylesheet">
+			<div id="imageLogotype"></div>
 
-    <!-- Custom Fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+			<nav>
+				<ul>
+					<li id="linkSocial"></li>
+					<li id="linkEvents"></li>
+					<li id="linkMedia"></li>
+					<li id="linkHome"></li>
+				</ul>
+			</nav>
+		</header>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+		<section>
+			<article id="articleHome" class="Hide">
+				<header><h1>Welcome. This is us.</h1></header>
+				<div class="Left">
+					Build is the largest Microsoft developer conference.<br />
+					<br />
+					Our mission is to build a dynamic networking community through various activities and gatherings.<br />
+					<br />
+					The Krewe of Build is open to current and past attendees of Microsoft Build previously known as PDC.<br />
+					<br />
+					<div class="Countdown">00:00:00:00</div>
+					<div class="CountdownLabel">UNTIL MICROSOFT BUILD 2015 IN SAN FRANCISCO CALIFORNIA</div>
+				</div>
+			</article>
 
-    <script type="text/javascript">
-        var appInsights=window.appInsights||function(config){
-            function s(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},r=document,f=window,e="script",o=r.createElement(e),i,u;for(o.src=config.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",r.getElementsByTagName(e)[0].parentNode.appendChild(o),t.cookie=r.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)s("track"+i.pop());return config.disableExceptionTracking||(i="onerror",s("_"+i),u=f[i],f[i]=function(config,r,f,e,o){var s=u&&u(config,r,f,e,o);return s!==!0&&t["_"+i](config,r,f,e,o),s}),t
-        }({
-            instrumentationKey:"f97e20e3-2627-4ed0-a9ba-5d67e5803fac"
-        });
+			<article id="articleSocial" class="Hide">
+				<header><h1>Be social. Join our network.</h1></header>
+				<ul>
+					<li><img id="linkSocialFacebook" src="https://az716616.vo.msecnd.net/thekrewebuild/content/Icon-Facebook.svg" /><br />Facebook</li>
+					<li><img id="linkSocialTwitter" src="https://az716616.vo.msecnd.net/thekrewebuild/content/Icon-Twitter.svg" /><br />Twitter</li>
+					<li><img id="linkSocialGlobe" src="https://az716616.vo.msecnd.net/thekrewebuild/content/Icon-Globe.svg" /><br />Member Map</li>
+				</ul>
 
-        window.appInsights=appInsights;
-        appInsights.trackPageView();
-    </script>
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand topnav" href="#"><span style="color:#00BCF2">/k</span> The Krewe of Build</a>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+				<a class="twitter-timeline" href="https://twitter.com/search?q=%40TheKreweBuild" data-widget-id="591791926736740352">Tweets about @TheKreweBuild</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</article>
 
+			<article id="articleEvents" class="Hide">
+				<header><h1>Happenings at build week.</h1></header>
+				<div class="Panels">
+					<div class="Panel">
+						<h2>Monday</h2>
 
-    <!-- Header -->
-    <a name="about"></a>
-    <div class="intro-header">
-        <div class="container">
+					</div>
 
-            <div class="row">
-                <div class="col-lg-9">
-                    <div class="intro-message">
-                        <h1><img alt="The Krewe of Build logo" style="width:64px;height:64px;margin-top:-15px;padding:0px" src="https://az716616.vo.msecnd.net/thekrewebuild/img/Logo-128.png"/> The Krewe of Build</h1>
-                        <h3>A group of Hard Working/Fun-loving Developers who gather at Microsoft //Build</h3>
-                        <h4>Build is the largest Microsoft developer conference.</h4>
-                        <h4>Our mission is to build a dynamic networking community through various activities and gatherings.</h4>
-                        <h4>The Krewe Build is open to current and past attendees of Microsoft Build previously known as PDC.</h4>
-                        <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="https://twitter.com/thekrewebuild" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/groups/130205153835380/" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                            </li>
-                            <li>
-                                <a href="http://www.cafepress.com/thekrewebuild" class="btn btn-default btn-lg"><i class="fa fa-shopping-cart fa-fw"></i> <span class="network-name">CafePress</span></a>
-                            </li>
-                            <li>
-                                <a href="events/" class="btn btn-default btn-lg"><i class="fa fa-calendar fa-fw"></i> <span class="network-name">Events</span></a>
-                            </li>
-                        </ul>
-                        <hr class="intro-divider">
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <a class="twitter-timeline"  href="https://twitter.com/TheKreweBuild" data-widget-id="560166522996670464">Tweets by @TheKreweBuild</a>
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                </div>
-            </div>
+					<div class="Panel">
+						<h2>Tuesday</h2>
+						<div id="linkEventXamarin" class="Event">KickOff Build with Xamarin!</div>
+						<div id="linkEventBayAreaAzure" class="Event">Welcome Reception</div>
+					</div>
 
-        </div>
-        <!-- /.container -->
+					<div class="Panel">
+						<h2>Wednesday</h2>
+						<div id="linkEventReception" class="Event">Welcome Reception</div>
+						<div id="linkEventTelerik" class="Event">Telerik Party at //Build!</div>
+						<div id="linkEventAfterHours" class="Event">After Hours @Build</div>
+						<div id="linkEventAppFestival" class="Event">App Festival &amp; Happy Hour</div>
+					</div>
 
-    </div>
-    <!-- /.intro-header -->
+					<div class="Panel">
+						<h2>Thursday</h2>
+						<div id="linkEventWindowsWeekly" class="Event">Windows Weekly Tweetup/Drinkup</div>
+						<div id="linkEventAttendeeParty" class="Event">Attendee Party</div>
+					</div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="copyright text-muted small">Copyright &copy; The Krewe of Build 2015. All Rights Reserved</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+					<div class="Panel">
+						<h2>Friday</h2>
 
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+					</div>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+					<div class="Panel">
+						<h2>Saturday</h2>
 
-</body>
+					</div>
+
+					<div class="Panel">
+						<h2>Sunday</h2>
+
+					</div>
+				</div>
+			</article>
+
+			<article id="articleMedia" class="Hide">
+				<header><h1>For press. For Public.</h1></header>
+				<ul>
+					<li id="linkDownloadLogotype"><img src="https://az716616.vo.msecnd.net/thekrewebuild/content/Icon-Download.svg" /><br />Logotype.psd</li>
+					<li id="linkDownloadWebDesign"><img src="https://az716616.vo.msecnd.net/thekrewebuild/content/Icon-Download.svg" /><br />WebDesign.psd</li>
+					<li id="linkDownloadSanFrancisco"><img src="https://az716616.vo.msecnd.net/thekrewebuild/content/Icon-Download.svg" /><br />SanFrancisco.psd</li>
+				</ul>
+			</article>
+		</section>
+	</body>
 </html>
