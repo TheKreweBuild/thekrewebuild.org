@@ -44,7 +44,7 @@ window.onload = function () {
 	}
 
 	//--- Initiate countdown.
-	var intCountTo = new Date(Date.UTC(2016, 03, 30, 15, 30, 0, 0)).getTime();
+	var intCountTo = 1459326600000;
 
 	setInterval(function () {
 		var objNow = new Date().getTime();
@@ -52,18 +52,11 @@ window.onload = function () {
 		if (intCountTo > objNow) {
 			var intTimeLeft = (intCountTo - objNow);
 
-			var intDays = (intTimeLeft > 86400000) ? Math.floor(intTimeLeft / 86400000) : 0;
-			intTimeLeft = intTimeLeft - intDays * 86400000;
-
-			var intHours = (intTimeLeft > 3600000) ? Math.floor(intTimeLeft / 3600000) : 0;
-			intTimeLeft = intTimeLeft - intHours * 3600000;
-
-			var intMinutes = (intTimeLeft > 60000) ? Math.floor(intTimeLeft / 60000) : 0;
-			intTimeLeft = intTimeLeft - intMinutes * 60000;
-
-			var intSeconds = (intTimeLeft > 1000) ? Math.floor(intTimeLeft / 1000) : 0;
-			var strResult = "";
-
+			var intSeconds = Math.floor( (intTimeLeft/1000) % 60 );
+			var intMinutes = Math.floor( (intTimeLeft/1000/60) % 60 );
+			var intHours = Math.floor( (intTimeLeft/(1000*60*60)) % 24 );
+			var intDays = Math.floor( intTimeLeft/(1000*60*60*24) );
+			var strResult = '';
 			if (intDays < 10) {
 				strResult += "0" + intDays + ":";
 			} else {
