@@ -12,6 +12,7 @@ window.onload = function () {
 
 	//--- Setup article events.
 	var arrEvents = [
+		{ Key: "linkEventTelerik", Address: "http://www.telerik.com/blogs/telerik-party-at-build-join-us" },
 	];
 
 	for (var intEvent = 0; intEvent < arrEvents.length; intEvent++) {
